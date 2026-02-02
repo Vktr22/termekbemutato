@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
+import MiniTermek from './components/MiniTermek.js';
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
           </div>
 
           <div className='termek-lista'>
-            <div className='mini-termek'><img src="/kepek/csokor2.jpg" alt="" /></div>
-            <div className='mini-termek'><img src="/kepek/csokor3.jpg" alt="" /></div>
-            <div className='mini-termek'><img src="/kepek/csokor4.jpg" alt="" /></div>
+            <MiniTermek/>
+            <MiniTermek/>
+            <MiniTermek/>
           </div>
         </div>
       </main>
