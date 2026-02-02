@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import MiniTermek from './components/MiniTermek.js';
+import termekek from './adatok.js';
 
 function App() {
   return (
@@ -17,9 +18,16 @@ function App() {
           </div>
 
           <div className='termek-lista'>
+            {/*<MiniTermek/>
             <MiniTermek/>
-            <MiniTermek/>
-            <MiniTermek/>
+            <MiniTermek/> ----> ezek helyett map-el vegig iteralunk az adatok listan AZERT MAP MERT EZ VISSZAAD ERTEKEEET
+             a zarojelben az elem a fgvny beepitett parametere!!!
+            */}
+            {termekek.map((elem) => (
+              <MiniTermek key={elem.id} adat={elem}/>
+            ))}
+
+            
           </div>
         </div>
       </main>
