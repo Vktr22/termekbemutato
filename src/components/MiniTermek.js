@@ -1,10 +1,10 @@
 import React from 'react'
 import './MiniTermek.css';
 
-function MiniTermek() {
+function MiniTermek(props) {
   return (
         <div className="mini-termek"> 
-            <img src="termek1.jpg" alt="Termék" /> 
+            <img src={props.adat.kep} alt={props.adat.nev} /> 
         </div> 
 
     );

@@ -4,6 +4,11 @@ import MiniTermek from './components/MiniTermek.js';
 import termekek from './adatok.js';
 
 function App() {
+
+  function termekKivalaszt(adat){
+    console.log("Kiválasztott termék: ", adat);
+  }
+
   return (
     <div className="App">
       <header className="App-header">
@@ -24,7 +29,7 @@ function App() {
              a zarojelben az elem a fgvny beepitett parametere!!!
             */}
             {termekek.map((elem) => (
-              <MiniTermek key={elem.id} adat={elem}/>
+              <MiniTermek key={elem.id} adat={elem} kattintas={termekKivalaszt}/>
             ))}
 
             
