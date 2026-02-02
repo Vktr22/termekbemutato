@@ -5,19 +5,23 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Termék bemutató</h1>
       </header>
+      <main>
+        <div className='container'>
+          <div className='fo-termek'>
+            <img src="/kepek/csokor1.jpg" alt="" />
+            <h2>Termék neve</h2>
+            <p>Termék leírása</p>
+          </div>
+
+          <div className='termek-lista'>
+            <div className='mini-termek'><img src="/kepek/csokor2.jpg" alt="" /></div>
+            <div className='mini-termek'><img src="/kepek/csokor3.jpg" alt="" /></div>
+            <div className='mini-termek'><img src="/kepek/csokor4.jpg" alt="" /></div>
+          </div>
+        </div>
+      </main>
     </div>
   );
 }
